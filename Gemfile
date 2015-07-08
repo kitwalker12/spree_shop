@@ -38,3 +38,29 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'bundler'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'dotenv-rails'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+end
+
+gem 'bootstrap-sass', '3.3.5'
+gem 'bootstrap-sass-extras'
+gem 'rails_config'
+gem 'binding_of_caller'
+gem 'google-analytics-rails'
+gem 'tzinfo-data'
+gem 'validates_formatting_of'
+
+group :development do
+  gem 'pry-rails'
+  gem 'better_errors'
+end
